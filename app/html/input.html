@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="UTF-8" />
+<title>Ввод</title>
+<head>
+    <h1>Введите значения переменных</h1>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <style>
+        head {
+          font-family: Oswald;
+        }
+
+        body {
+          font-family: Oswald;
+        }
+
+        h1 {
+          color: black;
+          text-align: center;
+          border: 4px double black;
+        }
+
+        .or {
+          text-align: center;
+          font-family: verdana;
+          font-size: 50px;
+        }
+
+
+        .guide {
+            text-align: left;
+            font-family: Open Sans;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+        div {
+          font-size: 32px;
+          border: 4px double black;
+        }
+        .box {
+            width:100%;
+            display:box;
+            /* Firefox */
+            display:-moz-box;
+            -moz-box-orient:horizontal;
+             /* Safari, Opera, and Chrome */
+            display:-webkit-box;
+            -webkit-box-orient:horizontal;
+            /* W3C */
+            display:box;
+            box-orient:horizontal;
+            color:black
+        }
+
+        .box .column1 {
+            -moz-box-flex:1.0; /* Firefox */
+            -webkit-box-flex:1.0; /* Safari and Chrome */
+            -ms-flex:1.0; /* Internet Explorer 10 */
+            box-flex:1.0;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .box .center {
+            -moz-box-flex:1.0; /* Firefox */
+            -webkit-box-flex:1.0; /* Safari and Chrome */
+            -ms-flex:1.0; /* Internet Explorer 10 */
+            box-flex:1.0;
+            text-align: center;
+        }
+
+        .box .column2 {
+            -moz-box-flex:1.0; /* Firefox */
+            -webkit-box-flex:1.0; /* Safari and Chrome */
+            -ms-flex:1.0; /* Internet Explorer 10 */
+            box-flex:1.0;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .window {
+            font-family: Oswald;
+            font-size: 20px;
+            font-style: italic;
+            width:100%
+        }
+
+        .button {
+            font-family: Oswald;
+            font-size: 20px;
+            font-style: italic;
+            width: 100%
+        }
+
+        label {
+          font-family: Oswald;
+          font-size: 30px;
+          font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <form action="/graph">
+      <label for="m">m:</label>
+      <input class="window" type="text" id="m" name="m"><br><br>
+      <label for="l">L:</label>
+      <input class="window" type="text" id="l" name="l"><br><br>
+      <label for="w">w:</label>
+      <input class="window" type="text" id="w" name="w"><br><br>
+      <label for="a">a:</label>
+      <input class="window" type="text" id="a" name="a"><br><br>
+      <input class="button" type="submit" value="Build graphic">
+      <input class="button" type="reset" value="Reset inputs">
+    </form>
+</body>
+</html>

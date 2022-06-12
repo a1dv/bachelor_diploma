@@ -1,0 +1,10 @@
+deploy:
+  stage: kubernetes
+  image: github.com/diploma:latest
+  services:
+    - docker:dind
+  script:
+    - apk add bash > /dev/null
+    - build/gitlab/scripts/deploy.sh
+  tags:
+    - linux-docker-executor
